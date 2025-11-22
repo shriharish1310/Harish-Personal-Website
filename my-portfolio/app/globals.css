@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light and Dark theme CSS variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #050505;
+    --foreground: #f5f5f5;
+  }
+}
+
+/* Basic global styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Centered content wrapper */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
